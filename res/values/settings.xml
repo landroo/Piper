@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<string-array name="pipeColorNames">
+		<item>Iron</item>
+		<item>Copper</item>
+		<item>Yellow copper</item>
+		<item>Plastic</item>
+	</string-array>
+	<string-array name="pipeColorValues">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+	
+	<string-array name="fluidColorNames">
+		<item>Red</item>
+		<item>Green</item>
+		<item>Blue</item>
+		<item>Magenta</item>
+		<item>Yellow</item>
+		<item>Cyan</item>
+	</string-array>
+	<string-array name="fluidColorValues">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+	</string-array>
+		
+</resources>
+

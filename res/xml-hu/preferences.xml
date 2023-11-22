@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:robobunny="http://robobunny.com"
+    android:key="preference_screen" >
+
+    <PreferenceCategory
+        android:key="display_category"
+        android:title="Kijelző" >
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/pipeColorNames"
+            android:entryValues="@array/pipeColorValues"
+            android:key="pipeColor"
+            android:summary="A cső színe."
+            android:title="Csőszín" >
+        </ListPreference>
+        <ListPreference
+            android:defaultValue="3"
+            android:entries="@array/fluidColorNames"
+            android:entryValues="@array/fluidColorValues"
+            android:key="fluidColor"
+            android:summary="A folyadék színe."
+            android:title="Folyadékszín" >
+        </ListPreference>
+
+        <com.robobunny.SeekBarPreference
+            android:defaultValue="8"
+            android:key="pipeSize"
+            android:max="19"
+            android:summary="A cső mérete a kijelzőhöz képest."
+            android:title="Csőméret"
+            robobunny:interval="1"
+            robobunny:min="6" />
+        <com.robobunny.SeekBarPreference
+            android:defaultValue="100"
+            android:key="tableSizeX"
+            android:max="200"
+            android:summary="A játék tábla szélessége százalékban a képernyő szélességéhez képest."
+            android:title="Tábla szélesseg"
+            robobunny:interval="10"
+            robobunny:min="50"
+            robobunny:unitsRight="%" />
+        <com.robobunny.SeekBarPreference
+            android:defaultValue="100"
+            android:key="tableSizeY"
+            android:max="200"
+            android:summary="A játéktábla magassága százalékban a képernyő magasságához képest."
+            android:title="Tábla magasság"
+            robobunny:interval="10"
+            robobunny:min="50"
+            robobunny:unitsRight="%" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="display_category"
+        android:title="Hálóza" >
+        <EditTextPreference
+            android:name="player"
+            android:defaultValue="Player"
+            android:key="player"
+            android:maxLength="10"
+            android:summary="A játékos beceneve."
+            android:title="Játékos név" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
